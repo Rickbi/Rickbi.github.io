@@ -29,37 +29,71 @@
         <section>
 
             <nav>
-                <p>Ignore This</p>
-                <a>Test 01</a>
-                <a>Test 02</a>
-                <a>Test 03</a>
-                <a>Test 04</a>
-                <a>Test 05</a>
-                <a>Test 06</a>
+                <p>Sections</p>
+                <a>Questionnaire Test</a>
+                <a>Download Questionnaire Data</a>
+                <a>Upload Data</a>
             </nav>
 
             <article>
 
-                <h1 class="TitlePost">File Test</h1>
-
+                <h1 class="TitlePost">Questionnaire Test</h1>
                 <div class="post">
-                    <h1>Test 01</h1>
                     <p>
-                        This Page is under construction.<br>
+                        The following is a questionnaire test.<br>
+                        You can select the answer by clicking on the option.
+                    </p>
+                    <h1>Question 01</h1>
+                    <p>
+                        What is the result value of: 2 + 2<br><br>
+                        <input type="radio" id="q01a01" name="q01" value="q1a1">
+                        <label for="q01a01">4</label><br>
+                        <input type="radio" id="q01a02" name="q01" value="q1a2">
+                        <label for="q01a02">3</label><br>
+                        <input type="radio" id="q01a03" name="q01" value="q1a3">
+                        <label for="q01a03">5</label>
+                    </p>
 
-                        <form>
-                            <input type="radio" id="01" name="test1" value="RED">
-                            <label for="01">RED</label><br>
-                            <input type="radio" id="02" name="test1" value="GREEN">
-                            <label for="01">GREEN</label><br>
-                            <input type="radio" id="03" name="test1" value="BLUE">
-                            <label for="01">BLUE</label><br>
-                            <br>
-                            <input type="button" id="Button" value="Test" onclick="changeColor()">
-                            <br><br>
-                            <input type="button" id="file" value="Download File" onclick="downloadFile()">
-                        </form>
+                    <h1>Question 02</h1>
+                    <p>
+                        Check all prime numbers<br><br>
+                        <input type="checkbox" id="q02a01" name="q02" value="q2a1">
+                        <label for="q02a01">1</label><br>
+                        <input type="checkbox" id="q02a02" name="q02" value="q2a2">
+                        <label for="q02a02">2</label><br>
+                        <input type="checkbox" id="q02a03" name="q02" value="q2a3">
+                        <label for="q02a03">7</label><br>
+                        <input type="checkbox" id="q02a04" name="q02" value="q2a4">
+                        <label for="q02a04">102458412</label>
+                    </p>
 
+                    <h1>Question 03</h1>
+                    <p>
+                        What is the result value of: 22 + 88<br><br>
+                        <label for="q03a01">Type here your answer: </label>
+                        <input type="text" id="q03a01" name="q03" placeholder="Type here your answer">
+                        <br><br>
+                        <label for="q03a02">Explaing why:</label><br>
+                        <textarea id="q03a02" name="q03" rows="5" cols="100" placeholder="Type here your answer"></textarea>
+                    </p>
+                </div>
+
+                <h1 class="TitlePost">Download Questionnaire Data</h1>
+                <div class="post">
+                    <p>
+                        Clicking the "Download File" will download a text file (.txt) with the questionnaire information.
+                    </p>
+                    <input type="button" id="file" value="Download File" onclick="downloadFile()">
+                </div>
+
+                <h1 class="TitlePost">Upload Data</h1>
+                <div class="post">
+                    <p>
+                        Here you can upload a text file (.txt) and see its content in the paragraph below
+                    </p>
+                    <input type="file" id="upfile" value="Upload File" accept="text/plain" onclick="uploadFile()">
+                    <p>
+                        <textarea id="areaText" rows="25" cols="100" placeholder="File content will be shown here after pressing the button." disabled></textarea>
                     </p>
                 </div>
 
