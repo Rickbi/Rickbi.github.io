@@ -91,7 +91,10 @@
                     <p>
                         Here you can upload a text file (.txt) and see its content in the paragraph below
                     </p>
-                    <input type="file" id="upfile" value="Upload File" accept="text/plain" onclick="uploadFile()">
+                    <label class="uploadButton">
+                        Upload File
+                        <input type="file" name="uploadFile" id="upfile" value="Upload File" accept="text/plain" onclick="uploadFile()">
+                    </label>
                     <p>
                         <textarea id="areaText" rows="25" cols="100" placeholder="File content will be shown here after pressing the button." disabled></textarea>
                     </p>
